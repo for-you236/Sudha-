@@ -1,0 +1,1134 @@
+
+
+
+
+.section_2
+{
+    position: relative;  
+    width: auto;
+    height: 100vh;
+    padding-right: 200px;
+    background: #e12516;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    /* overflow: hidden; */
+    padding-top: 50px;    
+}
+
+.section_2
+{
+    --color: gray;
+    background-image: linear-gradient( 0deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent ) , 
+    linear-gradient( 90deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent );
+    
+    background-size: 100px 100px ;
+}
+
+
+
+
+.section_2 .title
+{
+    position: absolute;
+    width: 400px; 
+    height: 150px; 
+    top: 300px; 
+    right: -100px;
+    transform: rotate(90deg);
+}
+
+
+.section_2 .title p:nth-of-type(1)
+{
+    
+    position: relative;
+    top: 0px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #56bae2;
+    font-family: Makebonk;
+    transform:  scaley(1.6) scalex(1);
+    text-shadow: 8px 8px 0px #000;
+    text-shadow:
+    3px 3px 0px #814ecf,
+    -3px -3px 0px #814ecf;
+        
+}
+
+
+.section_2 .title p:nth-of-type(2)
+{
+    
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    letter-spacing: 0;
+    color: #56bae2;
+    font-family: Makebonk;
+    transform:  scaley(1.7) scalex(1);
+    text-shadow:
+    3px 3px 0px #814ecf,
+    -3px -3px 0px #814ecf;
+        
+}
+
+.section_2 .title img
+{
+    position: absolute;
+    width: 70px;
+    height: auto;
+    top: 0px;
+    left: 30px;
+}
+
+
+.section_2 .radio
+{
+    display: none;
+}
+.section_2 .card 
+{
+    
+    position: relative;
+    width: 330px;
+    height: 250px;
+    flex-shrink: 0;
+    display: block;
+    perspective: 1000px;       
+    
+}
+
+.section_2 .card .flip
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.section_2 .card .flip .front
+{
+  position: absolute;
+  width: 330px;
+  height: 250px;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.section_2 .card .flip .front img
+{
+    position: relative;
+    width: 140%;
+    height: 110%;
+    top: -13px;
+    left: -65px;
+    transform: rotate(180deg);
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 1));
+    z-index: 0;
+    
+}
+
+.section_2 .card .flip .front .card-content
+{
+    position: absolute;
+    width: 310px;
+    height: 230px;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+   
+}
+
+.section_2 .card .flip .front .card-content::before 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 310px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    backdrop-filter: grayscale(100%);
+    /* background-color: black; */ 
+     overflow: hidden;
+    
+} 
+
+.section_2 .card .flip .front .card-content::after 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 310px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    /* backdrop-filter: grayscale(100%); */ 
+    background-color: #e12516; 
+     overflow: hidden;
+    
+}
+
+
+.section_2 #card-1 .flip .front p:nth-of-type(1)
+{
+    position: absolute;
+    left: 190px;
+    top: -20px;
+    font-family: Milany-Regular;
+    font-size: 90px ;
+    transform: rotate(90deg)  scaley(1.6) scalex(1.3);
+    color: #ffc400;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(2)
+{
+    position: absolute;
+    left: 195px;
+    top: 111px;
+    font-family: Milany-Regular;
+    font-size: 60px ;
+    font-weight: 900px;
+    letter-spacing: -3px;
+    transform: rotate(90deg)  scaley(1.2) scalex(1.1);
+    color: #ffc400 ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-1 .flip .front p:nth-of-type(3)
+{
+    position: absolute;
+    left: 180px;
+    top: 45px;
+    font-family: Milany-Regular;
+    font-size: 60px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.1) scalex(1.1);
+    color: #ffc400 ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(4)
+{
+    position: absolute;
+    left: 145px;
+    top: 133px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1.1);
+    color: #ffc400;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000;
+    
+}
+
+.section_2 #card-1 .flip .front .card-content img
+{
+    position: relative;
+    width:300px;
+    height: auto;
+    top: 100px;
+    left: 0px;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(5)
+{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    font-family: Milany-Regular;
+    font-size: 95px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.4) scalex(1);
+    color: #ffc400;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(6)
+{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    font-family: Milany-Regular;
+    font-size: 40px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(2) scalex(1.1);
+    color: #ffc400;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(7)
+{
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    font-family: Milany-Regular;
+    font-size: 65px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1.3);
+    color: #ffc400;
+    
+    text-shadow: 2px 2px 4px #000;
+    z-index: 3;
+}
+
+.section_2 #card-1 .flip .front p:nth-of-type(8)
+{
+    position: absolute;
+    left: -20px;
+    top: 140px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.2) scalex(1.2);
+    color: #ffc400;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+
+
+
+.section_2 .card  .flip .back
+{
+  position: absolute;
+  width: 330px;
+  height: 250px;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+  transform: rotatex(180deg);
+}
+
+
+.section_2 .card .flip .back img
+{
+    position: relative;
+    width: 140%;
+    height: 110%;
+    top: -13px;
+    left: -65px;
+    transform: rotate(180deg);
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 1));
+    z-index: 0;
+}
+
+.section_2 .card .flip .back .full-img
+{
+    position: absolute;
+    width: 310px;
+    height: 230px;
+    left: 10px;
+    top: 8px;
+    overflow: hidden;
+    background-color: #e12516;
+}
+
+.section_2 #card-1 .flip .back .full-img img:nth-of-type(1)
+{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: -125px;
+    left: -55px;
+    transform: rotate(90deg);
+    filter: grayscale(100%);
+}
+
+.section_2 #card-1 .flip .back .full-img img:nth-of-type(2)
+{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: -125px;
+    left: -55px;
+    transform: rotate(90deg);
+    
+}
+
+.section_2 #card-1 .quotation
+{
+    position: absolute;
+    width: 340px; 
+    height: 150px; 
+    top: 400px; 
+    right: 0px;
+    transform: rotate(90deg);
+    font-family: Brother-Signature;
+    color: white;
+    font-weight: 900px;
+}
+
+.section_2 #card-1 .quotation p
+{
+    position: absolute;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+                /* card-2 */
+                
+.section_2 #card-2
+{
+    top: 370px;
+}
+                
+ .section_2 #card-2 .flip .front p:nth-of-type(1)
+{
+    position: absolute;
+    left: 190px;
+    top: -20px;
+    font-family: Milany-Regular;
+    font-size: 90px ;
+    transform: rotate(90deg)  scaley(1.6) scalex(1.3);
+    color: #ff355e;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-2 .flip .front p:nth-of-type(2)
+{
+    position: absolute;
+    left: 195px;
+    top: 111px;
+    font-family: Milany-Regular;
+    font-size: 60px ;
+    font-weight: 900px;
+    letter-spacing: -3px;
+    transform: rotate(90deg)  scaley(1.2) scalex(1.1);
+    color: #ff355e ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-2 .flip .front p:nth-of-type(3)
+{
+    position: absolute;
+    left: 170px;
+    top: 45px;
+    font-family: Milany-Regular;
+    font-size: 62px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1);
+    color: #ff355e ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-2 .flip .front p:nth-of-type(4)
+{
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    font-family: Milany-Regular;
+    font-size: 43px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.6) scalex(1);
+    color: #ff355e;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-2 .flip .front .card-content img
+{
+    position: relative;
+    width:440px;
+    height: auto;
+    top: 130px;
+    left: -75px;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+}
+
+.section_2 #card-2 .flip .front p:nth-of-type(5)
+{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    font-family: Milany-Regular;
+    font-size: 95px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.4) scalex(1);
+    color: #ff355e;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-2 .flip .front p:nth-of-type(6)
+{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    font-family: Milany-Regular;
+    font-size: 40px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(2) scalex(1.1);
+    color: #ff355e;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-2 .flip .front p:nth-of-type(7)
+{
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    font-family: Milany-Regular;
+    font-size: 65px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1.3);
+    color: #ff355e;
+    
+    text-shadow: 2px 2px 4px #000;
+    z-index: 3;
+}
+
+.section_2 #card-2 .flip .front p:nth-of-type(8)
+{
+    position: absolute;
+    left: -20px;
+    top: 140px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.2) scalex(1.2);
+    color: #ff355e;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-2 .flip .back .full-img img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -190px;
+    left: -90px;
+    transform: rotate(90deg);
+    filter: grayscale(100%);
+}
+
+.section_2 #card-2 .flip .back .full-img-2
+{
+    position: absolute;
+    width: 310px;
+    height: 230px;
+    left: 10px;
+    top: 8px;
+    overflow: hidden;
+    
+}
+
+
+.section_2 #card-2 .flip .back .full-img-2 img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -190px;
+    left: -90px;
+    transform: rotate(90deg);
+    z-index:1;
+        
+}
+
+
+.section_2 #card-2 .quotation
+{
+    position: absolute;
+    width: 340px; 
+    height: 150px; 
+    top: -280px; 
+    right: 0px;
+    transform: rotate(90deg);
+    font-family: Brother-Signature;
+    color: white;
+    font-weight: 900px;
+}
+
+.section_2 #card-2 .quotation p:nth-of-type(1) 
+{
+    position: absolute;
+    font-size: 20px;
+    line-height: 0px;
+    top: -15px;
+    left: 100px;
+    font-family: wildflowers;
+}
+
+.section_2 #card-2 .quotation p:nth-of-type(2) 
+{
+    position: absolute;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+  
+ 
+             /* card-3 */
+ 
+.section_2 #card-3 .flip .front .card-content::before 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 230px;
+    height: 310px;
+    left: 30px;
+    top: -35px;
+    z-index: 3;
+    background-image: url("img/card-3-before.png");
+    background-size: 140% auto ;
+    background-position: center;
+    transform: rotate(90deg);
+    backdrop-filter: grayscale(0%); 
+    overflow: hidden;
+    
+    
+} 
+
+.section_2 #card-3 .flip .front .card-content::after 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 230px;
+    height: 310px;
+    left: 40px;
+    top: -40px;
+    z-index: 1;
+    background-image: url("img/card-3-after.png");
+    background-size: 100% 100% ;
+    background-position: center;
+    transform: rotate(90deg);
+    filter: grayscale(100%);   
+    overflow: hidden;
+     
+    
+}
+
+ 
+ 
+    
+.section_2 #card-3 .flip .front p:nth-of-type(1)
+{
+    position: absolute;
+    left: 190px;
+    top: -8px;
+    font-family: Milany-Regular;
+    font-size: 70px ;
+    transform: rotate(90deg)  scaley(2) scalex(1);
+    color: #9956d3;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(2)
+{
+    position: absolute;
+    left: 210px;
+    top: 134px;
+    font-family: Milany-Regular;
+    font-size: 30px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1);
+    color: #9956d3 ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-3 .flip .front p:nth-of-type(3)
+{
+    position: absolute;
+    left: 235px;
+    top: 60px;
+    font-family: Milany-Regular;
+    font-size: 40px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1.5);
+    color: #9956d3 ;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-3 .flip .front p:nth-of-type(4)
+{
+    position: absolute;
+    left: 200px;
+    top: 155px;
+    font-family: Milany-Regular;
+    font-size: 43px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1);
+    color: #9956d3;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-3 .flip .front .card-content img
+{
+    position: relative;
+    width:440px;
+    height: auto;
+    top: 100px;
+    left: -75px;
+    transform: rotate(90deg);
+    z-index: 2;
+    
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(5)
+{
+    position: absolute;
+    left: 115px;
+    top: -10px;
+    font-family: Milany-Regular;
+    font-size: 70px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1);
+    color: #9956d3;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(6)
+{
+    position: absolute;
+    left: 150px;
+    top: 165px;
+    font-family: Milany-Regular;
+    font-size: 35px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.8) scalex(1);
+    color: #9956d3;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(7)
+{
+    position: absolute;
+    left: 110px;
+    top: 180px;
+    font-family: Milany-Regular;
+    font-size: 20px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(2.1) scalex(1);
+    color: #9956d3;
+    
+    text-shadow: 2px 2px 4px #000;
+    z-index: 3;
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(8)
+{
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(2.6) scalex(1.5);
+    color: #9956d3;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 2;
+}
+
+.section_2 #card-3 .flip .front p:nth-of-type(9)
+{
+    position: absolute;
+    left: 60px;
+    top: 55px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1);
+    color: #9956d3;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+
+.section_2 #card-3 .flip .front p:nth-of-type(10)
+{
+    position: absolute;
+    left: -30px;
+    top: 95px;
+    font-family: Milany-Regular;
+    font-size: 40px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(0.8);
+    color: #9956d3;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+
+.section_2 #card-3 .flip .front p:nth-of-type(11)
+{
+    position: absolute;
+    left: -20px;
+    top: 170px;
+    font-family: Milany-Regular;
+    font-size: 40px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.4) scalex(0.6);
+    color: #9956d3;
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+
+
+.section_2 #card-3 .flip .back .full-img img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -150px;
+    left: -90px;
+    transform: rotate(90deg);
+    filter: grayscale(100%);
+}
+
+.section_2 #card-3 .flip .back .full-img-2
+{
+    position: absolute;
+    width: 310px;
+    height: 230px;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+    
+}
+
+
+.section_2 #card-3 .flip .back .full-img-2 img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -150px;
+    left: -90px;
+    transform: rotate(90deg);
+    z-index:1;
+        
+}
+
+
+.section_2 #card-3 .quotation
+{
+    position: absolute;
+    width: 340px; 
+    height: 150px; 
+    top: 400px; 
+    right: 0px;
+    transform: rotate(90deg);
+    font-family: Brother-Signature;
+    color: white;
+    font-weight: 900px;
+}
+
+.section_2 #card-3 .quotation p 
+{
+    position: absolute;
+    font-size: 50px;
+    line-height: 40px;
+}    
+
+
+
+
+
+
+
+
+
+                /* card - 6 */
+ 
+ .section_2 #card-4
+{
+    top: 400px;
+}
+               
+                
+.section_2 #card-4 .flip .front .card-content::before 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 310px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    backdrop-filter: grayscale(100%);
+    /* background-color: black; */ 
+     overflow: hidden;
+    
+} 
+
+.section_2 #card-4 .flip .front .card-content::after 
+{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 310px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    /* backdrop-filter: grayscale(100%); */ 
+    background-color: #e12516; 
+     overflow: hidden;
+    
+}
+ 
+ 
+    
+.section_2 #card-4 .flip .front p:nth-of-type(1)
+{
+    position: absolute;
+    left: 190px;
+    top: -8px;
+    font-family: Milany-Regular;
+    font-size: 70px ;
+    transform: rotate(90deg)  scaley(2) scalex(1);
+    color: #1abc9c;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.section_2 #card-4 .flip .front p:nth-of-type(2)
+{
+    position: absolute;
+    left: 215px;
+    top: 130px;
+    font-family: Milany-Regular;
+    font-size: 36px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1.2);
+    color: #1abc9c;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-4 .flip .front p:nth-of-type(3)
+{
+    position: absolute;
+    left: 140px;
+    top: 125px;
+    font-family: Milany-Regular;
+    font-size: 38px ;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(2) scalex(1);
+    color: #1abc9c;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+.section_2 #card-4 .flip .front p:nth-of-type(4)
+{
+    position: absolute;
+    left: 50px;
+    top: 85px;
+    font-family: Milany-Regular;
+    font-size: 43px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.3) scalex(1.1);
+    color: #1abc9c;
+    z-index: 2;
+    
+    text-shadow: 2px 2px 4px #000; 
+}
+
+
+.section_2 #card-4 .flip .front p:nth-of-type(5)
+{
+    position: absolute;
+    left: 70px;
+    top: 0px;
+    font-family: Milany-Regular;
+    font-size: 50px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1);
+    color: #1abc9c;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-4 .flip .front p:nth-of-type(6)
+{
+    position: absolute;
+    left: 35px;
+    top: 110px;
+    font-family: Milany-Regular;
+    font-size: 45px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1) scalex(1);
+    color: #1abc9c;
+    
+    text-shadow: 2px 2px 4px #000; 
+    z-index: 3;
+}
+
+.section_2 #card-4 .flip .front p:nth-of-type(7)
+{
+    position: absolute;
+    left: -60px;
+    top: 85px;
+    font-family: Milany-Regular;
+    font-size: 35px;
+    font-weight: 900px;
+    letter-spacing: 0px;
+    transform: rotate(90deg)  scaley(1.7) scalex(1);
+    color: #1abc9c;
+    
+    text-shadow: 2px 2px 4px #000;
+    z-index: 3;
+}
+
+
+
+
+.section_2 #card-4 .flip .back .full-img img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -80px;
+    left: -70px;
+    transform: rotate(90deg);
+    filter: grayscale(100%);
+}
+
+.section_2 #card-4 .flip .back .full-img-2
+{
+    position: absolute;
+    width: 310px;
+    height: 230px;
+    left: 10px;
+    top: 10px;
+    overflow: hidden;
+    
+}
+
+
+.section_2 #card-4 .flip .back .full-img-2 img
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -80px;
+    left: -70px;
+    transform: rotate(90deg);
+    z-index:1;
+        
+}
+
+
+.section_2 #card-4 .quotation
+{
+    position: absolute;
+    width: 340px; 
+    height: 150px; 
+    top: -300px; 
+    right: -50px;
+    transform: rotate(90deg);
+    font-family: Brother-Signature;
+    color: white;
+    font-weight: 900px;
+}
+
+.section_2 #card-4 .quotation p 
+{
+    position: absolute;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+.section_2 #radio-1:checked ~ #card-1 .flip ,
+.section_2 #radio-2:checked ~ #card-2 .flip ,
+.section_2 #radio-3:checked ~ #card-3 .flip ,
+.section_2 #radio-4:checked ~ #card-4 .flip 
+{
+    transform: rotatex(180deg);
+}

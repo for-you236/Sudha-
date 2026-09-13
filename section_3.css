@@ -1,0 +1,71 @@
+.section_3
+{
+    position: relative;  
+    width: auto;
+    height: 100vh;
+    padding-right: 200px;
+    background: #e12516;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    overflow: hidden;    
+}
+
+.section_3
+{
+    --color: gray;
+    background-image: linear-gradient( 0deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent ) , 
+    linear-gradient( 90deg , transparent 24% , var(--color) 25% , var(--color) 26% ,  transparent 27% ,  transparent 74% , var(--color) 75% , var(--color) 76% , transparent 77% ,  transparent );
+    
+    background-size: 100px 100px ;
+}
+
+
+.section_3 .title
+{
+    position: absolute;
+    width: 400px; 
+    height: 150px; 
+    top: 300px; 
+    right: -100px;
+    transform: rotate(90deg);
+    
+}
+
+.section_3 .title p
+{
+    
+    position: relative;
+    top: 20px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0;
+    font-family: Makebonk;
+    transform:  scaley(1.6) scalex(1);
+            
+}
+
+
+
+.section_3 .my-video
+{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    top: 15px;
+    right: -70px;
+
+    object-fit: cover;
+    cursor: pointer;
+
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.section_3 .my-video:focus
+{
+    outline: none;
+}
